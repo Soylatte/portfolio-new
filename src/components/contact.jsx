@@ -24,7 +24,7 @@ const Contact = () => {
       };
     return (
     
-        <div className='text-center'>
+        <div className='form'>
             <span className='text-center font-bold'>Contact Me!</span>
             <p>I will reply in 2days </p>
             <form className="flex w-96 flex-col gap-6 justify-center text-center">
