@@ -2,10 +2,11 @@ import './App.css';
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 import Hero from './components/hero';
 import Navbar from './components/navbar';
-import Home from './components/home';
+
 import Footer from './components/footer';
 import { useEffect, useState } from 'react';
 import Contact from './components/contact';
+import Skills from './components/skills';
 
 function App() {
   const [isdark, setIsdark] = useState(
@@ -31,7 +32,8 @@ function App() {
         <Route path='/contact'/>
       </Routes>
       <Hero />
-      <Home />
+  
+      <Skills />
       <Contact />
       <Footer />
       </Router>

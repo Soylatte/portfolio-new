@@ -1,6 +1,7 @@
 import React from "react";
 import emailjs from '@emailjs/browser';
 import { useRef } from "react";
+import { Button } from "@material-tailwind/react";
 
 const Contact = () => {
     const form = useRef();
@@ -23,15 +24,19 @@ const Contact = () => {
       };
     return (
     
-        <div>
-            <form>
+        <div className='text-center'>
+            <span className='text-center font-bold'>Contact Me!</span>
+            <p>I will reply in 2days </p>
+            <form className="flex w-96 flex-col gap-6 justify-center text-center">
                 <label>Name</label>
-                <input type="text" name="user_name"/>
+                <input size='lg' type="text" name="user_name" />
                 <label>Email</label>
-                <input type="email" name="user_email" />
-                <label>Message</label>
+                <input size='lg' type="email" name="user_email" />
+                <label >Message</label>
                 <textarea name="message"/>
-                <input type="submit" value='Send'/>
+                <Button size='lg' type="submit" value='Send' variant="outlined" className="rounded-full">
+                    submit
+                </Button>
             </form>
 </div>
     )

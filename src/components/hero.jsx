@@ -5,7 +5,7 @@ const Hero = () => {
     window.open(url,"_blank","noopener, noreferrer");
   };
   return (
-    <div className="hero min-h-screen bg-base-200 ">
+    <div className="hero min-h-screen">
   <div className="hero-content flex-col lg:flex-row">
     <img src={process.env.PUBLIC_URL+'./assets/soyeon_photo.jpg'} className="max-w-sm rounded-lg shadow-2xl mask mask-circle" />
     <div>
