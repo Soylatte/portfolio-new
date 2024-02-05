@@ -5,6 +5,7 @@ import Navbar from './components/navbar';
 import Home from './components/home';
 import Footer from './components/footer';
 import { useEffect, useState } from 'react';
+import Contact from './components/contact';
 
 function App() {
   const [isdark, setIsdark] = useState(
@@ -31,6 +32,7 @@ function App() {
       </Routes>
       <Hero />
       <Home />
+      <Contact />
       <Footer />
       </Router>
       </div>
