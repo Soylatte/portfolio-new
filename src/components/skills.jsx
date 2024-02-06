@@ -1,8 +1,15 @@
 import React from "react";
+import { motion } from 'framer-motion'
 
 const Skills = () => {
+
     return(
        <>
+       <motion.div
+       initial={{opacity:0}}
+       animate={{opacity:1}}
+       exit={{opacity:0}}>
+
             <span className="font-bold justify-center">📑 SKILLS</span>
             <h1 className="font-bold justify-center">Frontend</h1>
             <div className='grid grid-cols-4 gap-4 object-contain'>
@@ -22,9 +29,10 @@ const Skills = () => {
             <img src={process.env.PUBLIC_URL+'./assets/git.png'} alt='git' className="object-scale-down h-48 w-20"/>
             <img src={process.env.PUBLIC_URL+'./assets/github.png'} alt='github' className="object-scale-down h-48 w-20"/>
             </div>
+            </motion.div>
 
 
-        
+
         </>
     )
 }

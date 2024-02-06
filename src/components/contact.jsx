@@ -2,6 +2,7 @@ import React from "react";
 import emailjs from '@emailjs/browser';
 import { useRef } from "react";
 import { Button } from "@material-tailwind/react";
+import {motion} from 'framer-motion'
 
 const Contact = () => {
     const form = useRef();
@@ -23,8 +24,11 @@ const Contact = () => {
           );
       };
     return (
-    
-        <div className='form'>
+      <motion.div
+       initial={{opacity:0}}
+       animate={{opacity:1}}
+       exit={{opacity:0}}>
+        <div className='form textarea textarea-bordered'>
             <span className='text-center font-bold'>Contact Me!</span>
             <p>I will reply in 2days </p>
             <form className="flex w-96 flex-col gap-6 justify-center text-center">
@@ -39,6 +43,7 @@ const Contact = () => {
                 </Button>
             </form>
 </div>
+</motion.div>
     )
 }
 

@@ -1,8 +1,13 @@
 import React from "react";
+import {motion} from 'framer-motion'
 
 const Projects = () => {
     return (
       <>
+      <motion.div
+       initial={{opacity:0}}
+       animate={{opacity:1}}
+       exit={{opacity:0}}>
       <span className="font-bold">Projects</span>
       <div className='flex flex-nowrap gap-7'>
       <div className="card w-96 bg-base-100 shadow-xl">
@@ -35,6 +40,7 @@ const Projects = () => {
 </div>
 </div>
 </div>
+</motion.div>
 </> 
     )
 }
