@@ -1,30 +1,23 @@
 import './App.css';
-import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
+import { BrowserRouter as Router,Routes,Route, useNavigate, useLocation } from 'react-router-dom';
 import Hero from './components/hero';
 import Navbar from './components/navbar';
 
 import Footer from './components/footer';
-import { useEffect, useState } from 'react';
 import Contact from './components/contact';
 import Skills from './components/skills';
+import Projects from './components/project';
+import { motion } from "framer-motion";
 
 function App() {
-  const [isdark, setIsdark] = useState(
-    JSON.parse(localStorage.getItem('isdark'))
-  );
 
-  useEffect(()=> {
-    localStorage.setItem('isdark', JSON.stringify(isdark))
-  },[isdark])
+  const isSelected = true;
+
   return (
     <div className="App bg-#CAEDFF">
       <Router>
-      <Navbar />
-      <input
-      type='checkbox'
-      checked={isdark}
-      value="synthwave" className="prefixtoggle prefixtheme-controller"
-      onChange={()=> setIsdark(!isdark)}/>
+      {isSelected && <motion.div layoutId="underline" />}
+      <Navbar/>
       <Routes>
         <Route path='/' />
         <Route path='/skills'/>
@@ -32,8 +25,8 @@ function App() {
         <Route path='/contact'/>
       </Routes>
       <Hero />
-  
       <Skills />
+      <Projects />
       <Contact />
       <Footer />
       </Router>
