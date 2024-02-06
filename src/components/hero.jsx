@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+
 const Hero = () => {
   const handleOpenNewTab = (url) => {
     window.open(url,"_blank","noopener, noreferrer");
@@ -16,9 +16,6 @@ const Hero = () => {
               I am excited to work in a team and apply my expertise to improve user experience and convey information effectively.
             </p>
             <button className="btn btn-custom bg-red-200 border-red-300 hover:bg-red-300 hover:border-red-200" onClick={() => handleOpenNewTab("https://github.com/Soylatte")}>GitHub</button>
-            <button className="btn btn-custom bg-red-200 border-red-300 hover:bg-red-300 hover:border-red-200" onClick={() => handleOpenNewTab("http://linkedin.com/in/soyeon-kim-4aa971209")}>
-              Linkedin
-            </button>
           </div>
         </div>
       </div>

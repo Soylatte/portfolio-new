@@ -16,7 +16,6 @@ function App() {
   return (
     <div className="App bg-#CAEDFF">
       <Router>
-      {isSelected && <motion.div layoutId="underline" />}
       <Navbar/>
       <Routes>
         <Route path='/' />
@@ -24,13 +23,20 @@ function App() {
         <Route path='/projects'/>
         <Route path='/contact'/>
       </Routes>
+      <motion.div
+    className="box"
+    animate={{ y: 100 }}
+    transition={{ type: "spring" }}
+  >
       <Hero />
+      </motion.div>
       <Skills />
       <Projects />
       <Contact />
       <Footer />
       </Router>
       </div>
+
   );
 }
 
