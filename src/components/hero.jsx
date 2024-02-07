@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from 'framer-motion'
 
 const Hero = () => {
   const handleOpenNewTab = (url) => {
@@ -6,7 +7,10 @@ const Hero = () => {
   };
   return (
     <>
-      <div className="hero min-h-screen  ">
+      <motion.div className="hero min-h-screen"
+      animate={{ y: 100 }}
+      transition={{ type: "spring" }} id="Hero"
+      >
         <div className="hero-content flex-col lg:flex-row">
           <img src={process.env.PUBLIC_URL + './assets/soyeon_photo.jpg'} className="max-w-sm rounded-lg shadow-2xl mask mask-circle" />
           <div>
@@ -18,7 +22,7 @@ const Hero = () => {
             <button className="btn btn-custom bg-red-200 border-red-300 hover:bg-red-300 hover:border-red-200" onClick={() => handleOpenNewTab("https://github.com/Soylatte")}>GitHub</button>
           </div>
         </div>
-      </div>
+      </motion.div>
       </>
   )
 }
