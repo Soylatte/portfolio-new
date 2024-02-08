@@ -4,18 +4,21 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .navbar {
     justify-content: space-between;
     cursor: pointer;
   }
-}
-body {
-  font-family: 'Plus Jakarta Sans';
-  background: rgb(238, 174, 202);
-  background: radial-gradient(
-    circle,
-    rgba(238, 174, 202, 1) 0%,
-    rgba(148, 187, 233, 1) 100%
-  );
+
+  body {
+    font-family: 'Plus Jakarta Sans';
+    background: rgb(238, 174, 202);
+    background: radial-gradient(
+      circle,
+      rgba(238, 174, 202, 1) 0%,
+      rgba(148, 187, 233, 1) 100%
+    );
+    margin: 0 auto;
+    padding: 0 auto;
+  }
 }

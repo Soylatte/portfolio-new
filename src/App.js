@@ -1,4 +1,4 @@
-import './App.css';
+
 import { BrowserRouter as Router, Routes,Route} from 'react-router-dom';
 import Hero from './components/hero';
 import Navbar from './components/navbar';
@@ -12,7 +12,7 @@ function App() {
 
 
   return (
-    <div className="App md:container md:mx-auto">
+    <div className="App">
       <Router>
       <Navbar/>
       <Routes>

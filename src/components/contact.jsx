@@ -1,56 +1,39 @@
 import React from "react";
 import emailjs from '@emailjs/browser';
 import { useRef } from "react";
-
-import {motion} from 'framer-motion'
-
+import {motion} from 'framer-motion';
 
 const Contact = () => {
 
-    const form = useRef();
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-    const sendEmail = (e) => {
-        e.preventDefault();
-    
-        emailjs
-          .sendForm('service_rbehfwo', 'template_aavc1me', form.current, {
-            publicKey: 'Dug0pRg3X3nJUyo9D',
-          })
-          .then(
-            () => {
-              console.log('SUCCESS!');
-            },
-            (error) => {
-              console.log('FAILED...', error.text);
-            },
-          );
-      };
+    emailjs.sendForm("service_nt2ys31","template_o7hjf2r",form.current,"prnZa_dzaCeeZ3FuH").then((result)=>{
+      console.log(result.text);
+      alert("Sent!")
+    }, (error)=>{
+      console.error(error.text);
+    });
+  };
+  
     return (
       <motion.div
       animate={{ x: 100 }}
-      transition={{ type: "spring" }} id="Contact" >
-        <span className="font-bold text-4xl ">You can email me!</span>
-        <h1 className="text-xl">I will reply asap😊</h1>
+      transition={{ type: "spring" }} id="Contact">
+        <span>You can email me!</span>
+        <h1>I will reply asap😊</h1>
         <br/>
-         <label className="form-control w-full max-w-xs">
-  <div className="label">
-    <span className="label-text">Email</span>
-    </div>
-    <input type="text" name="email"placeholder="ex)abcd@gmail.com" className="input input-bordered w-full max-w-xl" />
-    </label>
-    <br/><br/><br/>
-    <label className="form-control w-full max-w-xs">
-  <div className="label">
-    <span className="label-text">Name</span>
-    </div>
-    <input type="text" name="name" placeholder="Soyeon Kim" className="input input-bordered w-full max-w-xs" />
-    </label>
-    <br/><br/><br/>
+        <form ref={form} onSubmit={sendEmail}>
+          <label>Email</label>
+          <input type="email" name="email"/>
+          <label>Name</label>
+          <input type="name" name="name" required/>
+          <textarea name="message" placeholder="message" required/> \
+          <input type="submit" value="Send" className=""/>
+        </form>
+   
   
-    <textarea placeholder="Message" name="message" className="textarea textarea-bordered textarea-lg w-full max-w-xs" ></textarea>
-    <br/><br/><br/>
-    <input type="submit" value="Send" className="btn" onSubmit={sendEmail}/>
-               
 </motion.div>
     )
 }
