@@ -8,17 +8,16 @@
   .navbar {
     justify-content: space-between;
     cursor: pointer;
+    position: sticky;
   }
-
-  body {
-    font-family: 'Plus Jakarta Sans';
-    background: rgb(238, 174, 202);
-    background: radial-gradient(
-      circle,
-      rgba(238, 174, 202, 1) 0%,
-      rgba(148, 187, 233, 1) 100%
-    );
-    width: 100%;
-    overflow-x: hidden;
-  }
+}
+body {
+  font-family: 'Plus Jakarta Sans';
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  width: 100%;
 }

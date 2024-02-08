@@ -39,9 +39,8 @@ const Contact = () => {
     return (
       <motion.div
       animate={{ x: 100 }}
-      transition={{ type: "spring" }} id="Contact">
-        <span>You can email me!</span>
-        <h1>I will reply asap😊</h1>
+      transition={{ type: "spring" }} id="Contact" className="flex gap-4">
+        <span className="font-bold text-4xl">You can email me!</span>
         <br/>
         <form onSubmit={handleSubmit} className="emailForm">
           <input type="text"
@@ -50,12 +49,14 @@ const Contact = () => {
           onChange={(e) => setName(e.target.value)}/>
           <input  type="email"
           value={email}
+          placeholder="ex)ascd@gmail.com"
           onChange={(e)=> setEmail(e.target.value)}/>
           <textarea
           value={message}
+          placeholder="message"
           onChange={(e) => setMessage(e.target.value)}>
           </textarea>
-          <button type="submit" className="text-black">Send</button>
+          <button type="submit" className="text-white bg-slate-400 max-8 py-4 rounded-full w-32 flex justify-center items-center transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg" >Send</button>
 
         </form>
    

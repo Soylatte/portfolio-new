@@ -28,7 +28,7 @@ const Skills = () => {
       }}
        id="Skills">
 
-            <span className="font-bold  flex justify-center text-4xl">📑 SKILLS</span>
+            <span className="font-bold text-4xl flex flex-1">SKILLS</span>
             <br />
             <h1 className="font-bold  flex justify-center text-xl">Frontend</h1>
             <div className="object-contain grid grid-cols-4 gap-4 items-center place-items-center">
