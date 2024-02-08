@@ -1,11 +1,12 @@
 import React from "react";
 import emailjs from '@emailjs/browser';
 import { useRef } from "react";
-import { Button } from "@material-tailwind/react";
+
 import {motion} from 'framer-motion'
 
 
 const Contact = () => {
+
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -28,25 +29,28 @@ const Contact = () => {
       <motion.div
       animate={{ x: 100 }}
       transition={{ type: "spring" }} id="Contact" >
-
-            <span color="blue-gray" className="font-bold text-4xl flex justify-center items-center
-            ">Contact Me!</span>
-            <p className="flex justify-center items-center">I will reply in 2days 😊 </p>
-            <br/><br /><br />
-            <div className="flex w-96 flex-col gap-6">
-                <label>What's your name?</label>
-                <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
-                <label>What's your email?</label>
-                <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs"/>
-                <label >Message</label>
-                <textarea placeholder="Type your message!" className="textarea textarea-bordered textarea-lg w-full max-w-xs object-contain" />
-                <Button  size="lg" className="rounded-full  bg-black text-white
-                flex justify-center items-center" >
-                    send
-                </Button>
-                </div>
-
-
+        <span className="font-bold text-4xl ">You can email me!</span>
+        <h1 className="text-xl">I will reply asap😊</h1>
+        <br/>
+         <label className="form-control w-full max-w-xs">
+  <div className="label">
+    <span className="label-text">Email</span>
+    </div>
+    <input type="text" name="email"placeholder="ex)abcd@gmail.com" className="input input-bordered w-full max-w-xl" />
+    </label>
+    <br/><br/><br/>
+    <label className="form-control w-full max-w-xs">
+  <div className="label">
+    <span className="label-text">Name</span>
+    </div>
+    <input type="text" name="name" placeholder="Soyeon Kim" className="input input-bordered w-full max-w-xs" />
+    </label>
+    <br/><br/><br/>
+  
+    <textarea placeholder="Message" name="message" className="textarea textarea-bordered textarea-lg w-full max-w-xs" ></textarea>
+    <br/><br/><br/>
+    <input type="submit" value="Send" className="btn" onSubmit={sendEmail}/>
+               
 </motion.div>
     )
 }

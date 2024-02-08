@@ -9,7 +9,7 @@ const Navbar = () => {
         <header className="rounded-box">
             <nav className="navbar">
                 <Link to='/'spy={true} smooth={true} className="btn btn-ghost text-xl">Soyeon Kim</Link>
-                <div className="space-between gap-5 font-bold" >
+                <div className="space-between gap-5 font-bold cursor-pointer" >
                 <Link to="Skills" spy={true} smooth={true} onClick={()=> {
                     window.scrollTo({
                         top:800,

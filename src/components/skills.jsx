@@ -1,6 +1,17 @@
 import React from "react";
 import { motion } from 'framer-motion'
+import { MdHtml } from "react-icons/md";
+import { MdOutlineCss } from "react-icons/md";
+import { IoLogoJavascript } from "react-icons/io5";
+import { IoLogoReact } from "react-icons/io5";
+import { SiTypescript } from "react-icons/si";
+import { SiNextdotjs } from "react-icons/si";
+import { RiBootstrapLine } from "react-icons/ri";
+import { SiTailwindcss } from "react-icons/si";
 
+import { FaNode } from "react-icons/fa";
+import { FaGit } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 const Skills = () => {
 
     return(
@@ -20,22 +31,22 @@ const Skills = () => {
             <span className="font-bold  flex justify-center text-4xl">📑 SKILLS</span>
             <br />
             <h1 className="font-bold  flex justify-center text-xl">Frontend</h1>
-            <div className='grid grid-cols-4 gap-4 object-contain justify-center place-items-center'>
-            <img src={process.env.PUBLIC_URL+'./assets/html.png'} alt='html' className="object-scale-down h-48 w-20 justify-center"/>
-            <img src={process.env.PUBLIC_URL+'./assets/css.png'} alt='css' className="object-scale-down h-48 w-20 justify-center"/>
-            <img src={process.env.PUBLIC_URL+'./assets/js.png'} alt='js' className="object-scale-down h-48 w-20 justify-center"/>
-            <img src={process.env.PUBLIC_URL+'./assets/reactjs.png'} alt='react' className="object-scale-down h-48 w-20 justify-center"/>
-            <img src={process.env.PUBLIC_URL+'./assets/bootstrap.png'} alt='bootstrap' className="object-scale-down h-48 w-20 justify-center"/>
-            <img src={process.env.PUBLIC_URL+'./assets/tailwind.png'} alt='tailwind' className="object-scale-down h-48 w-20 justify-center"/>
-            <img src={process.env.PUBLIC_URL+'./assets/typescript.png'} alt='typescript' className="object-scale-down h-48 w-20 justify-center"/>
-            <img src={process.env.PUBLIC_URL+'./assets/nextjs.png'} alt='next' className="object-scale-down h-48 w-20 justify-center"/>
+            <div className="object-contain grid grid-cols-4 gap-4 items-center place-items-center">
+            <MdHtml size={50}/>
+            <MdOutlineCss  size={50}/>
+            <IoLogoJavascript size={50} />
+            <IoLogoReact size={50} />
+            <SiTypescript  size={50}/>
+            <SiNextdotjs size={50}/>
+            <RiBootstrapLine size={50} />
+            <SiTailwindcss size={50}/>
             </div>
-
+            <br/><br/><br/>
             <h2 className="font-bold flex justify-center text-xl">Backend</h2>
             <div className="object-contain grid grid-cols-4 gap-4 items-center place-items-center">
-            <img src={process.env.PUBLIC_URL+'./assets/node.png'} alt='node' className="object-scale-down h-48 w-20 justify-center"/>
-            <img src={process.env.PUBLIC_URL+'./assets/git.png'} alt='git' className="object-scale-down h-48 w-20 justify-center"/>
-            <img src={process.env.PUBLIC_URL+'./assets/github.png'} alt='github' className="object-scale-down h-48 w-20 justify-center"/>
+           <FaNode size={50}/>
+           <FaGit  size={50}/>
+           <FaGithub size={50} />
             </div>
             </motion.div>
 

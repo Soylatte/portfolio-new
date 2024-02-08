@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from 'framer-motion'
+import { FaLinkedin } from "react-icons/fa";
+import { IoLogoGithub } from "react-icons/io";
 
 const Hero = () => {
   const handleOpenNewTab = (url) => {
@@ -19,7 +21,10 @@ const Hero = () => {
               As a versatile Front-end Developer with an extensive background in International trade and business administration do I bring with me unique and sought-after skill sets for the field of responsive web development.
               I am excited to work in a team and apply my expertise to improve user experience and convey information effectively.
             </p>
-            <button className="btn btn-custom bg-red-200 border-red-300 hover:bg-red-300 hover:border-red-200" onClick={() => handleOpenNewTab("https://github.com/Soylatte")}>GitHub</button>
+            <div className="flex items-stretch">
+            <FaLinkedin size={30} className="cursor-pointer" onClick={() => handleOpenNewTab("https://www.linkedin.com/in/soyeon-kim-4aa971209/")}/>
+            <IoLogoGithub size={30} className="cursor-pointer" onClick={() => handleOpenNewTab("https://github.com/Soylatte")} />
+            </div>
           </div>
         </div>
       </motion.div>

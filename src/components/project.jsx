@@ -1,10 +1,13 @@
 import React from "react";
 import { motion } from 'framer-motion'
+import { IoLogoGithub } from "react-icons/io";
+import { IoIosLink } from "react-icons/io";
 
 const Projects = () => {
+  const handleOpenNewTab = (url) => {
+    window.open(url,"_blank","noopener, noreferrer");
+  };
 
-
-  
     return (
       <>
       <motion.div
@@ -32,31 +35,10 @@ const Projects = () => {
           <div className="badge badge-outline">Tailwind CSS</div>
           <div className="badge badge-outline">TypeScript</div>
         </div>
-         {/* The button to open modal */}
-<label htmlFor="my_modal_6" className="btn">Detail</label>
 
-{/* Put this part before </body> tag */}
-<input type="checkbox" id="my_modal_6" className="modal-toggle" />
-<div className="modal" role="dialog">
-  <div className="modal-box">
-    <h3 className="font-bold text-lg">Project Description</h3>
-    <p className="py-4">
-      What i did
-      <li>
-      Implemented server-side rendering to display the details of the cars</li>
-      <li>available for borrowing with a limit on the number of cars the user can view when clicking 'show more'.</li>
-      <li>This ensured a smooth user experience and efficient.</li>
-      <br/>
-      What i learned
-      <li>Through this project, I have gained a comprehensive understanding of Typescript and server-side rendering.</li>
-      </p>
-    <div className="modal-action">
-      <label htmlFor="my_modal_6" className="btn">Close!</label>
-    </div>
-  </div>
-</div>
+        <IoIosLink onClick={() => handleOpenNewTab("https://rent-car-app-flame.vercel.app/")} className="cursor-pointer" size={35}/>
+        <IoLogoGithub onClick={() => handleOpenNewTab("https://github.com/Soylatte/rent-car-app")} className="cursor-pointer" size={35}/>
       </div>
-      
     </div>
 
 
@@ -66,36 +48,15 @@ const Projects = () => {
   <h2 className="card-title">
     Hej - A cafe information website
   </h2>
-  <p>I developed a website for a newly opened cafe using the client-side rendering of React.</p>
+  <p>A website for a newly opened cafe using the client-side rendering of React.</p>
   <div className="card-actions justify-end">
     <div className="badge badge-outline">React.js</div> 
     <div className="badge badge-outline">Bootstrap 5</div>
   </div>
-  {/* The button to open modal */}
-<label htmlFor="my_modal_6" className="btn">Detail</label>
 
-{/* Put this part before </body> tag */}
-<input type="checkbox" id="my_modal_6" className="modal-toggle" />
-<div className="modal" role="dialog">
-  <div className="modal-box">
-    <h3 className="font-bold text-lg">Project Description</h3>
-    <p className="py-4">
-      What i did
-      <li>
-      I implemented the 'Join the Waitlist' feature using Blank Street Coffee's website as a guide.</li>
-      <li>A modal window will now be displayed when the button is pressed.</li>
-      <li>A responsive website guarantees mobile-readiness.</li>
-      <br/>
-      What i learned
-      <li>Through this project, I have gained a comprehensive understanding of Typescript and server-side rendering.</li>
-      </p>
-    <div className="modal-action">
-      <label htmlFor="my_modal_6" className="btn">Close!</label>
-    </div>
-  </div>
+  <IoIosLink onClick={() => handleOpenNewTab("https://splendid-khapse-209576.netlify.app/")} className="cursor-pointer" size={35}/>
+        <IoLogoGithub onClick={() => handleOpenNewTab("https://github.com/Soylatte/Hej-cafe-web")} className="cursor-pointer" size={35}/>
 </div>
-</div>
-
 </div>
 
 <div className="card w-96 bg-base-100 shadow-xl">
@@ -104,17 +65,20 @@ const Projects = () => {
   <h2 className="card-title">
     Portfolio - Showcases the projects I worked on
   </h2>
-  <p>If a dog chews shoes whose shoes does he choose?</p>
+  <p>Display all my projects I worked on</p>
   <div className="card-actions justify-end">
     <div className="badge badge-outline">React.js</div> 
     <div className="badge badge-outline">Tailwind CSS</div>
     <div className="badge badge-outline">Framer motion</div>
   </div>
+
+  <IoIosLink onClick={() => handleOpenNewTab("https://github.com/Soylatte/Hej-cafe-web")} className="cursor-pointer" size={35}/>
+        <IoLogoGithub  onClick={() => handleOpenNewTab("https://github.com/Soylatte/portfolio-new")} className="cursor-pointer" size={35}/>
 </div>
 </div>
 </div>
 </motion.div>
-</> 
+</>
 
     )
 
