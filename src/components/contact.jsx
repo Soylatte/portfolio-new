@@ -1,21 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import emailjs from '@emailjs/browser';
-import { useRef } from "react";
+
 import {motion} from 'framer-motion';
+
 
 const Contact = () => {
 
-  const form = useRef();
-  const sendEmail = (e) => {
+  const [name,setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm("service_nt2ys31","template_o7hjf2r",form.current,"prnZa_dzaCeeZ3FuH").then((result)=>{
-      console.log(result.text);
-      alert("Sent!")
-    }, (error)=>{
-      console.error(error.text);
+    const serviceId = 'service_nt2ys31';
+    const templateId = 'template_aavc1me';
+    const publicKey = 'prnZa_dzaCeeZ3FuH';
+
+    const templateParams = {
+      user_name: name,
+      user_email: email,
+      to_name: 'Soyeon Kim',
+      message: message,
+    };
+
+    emailjs.send(serviceId,templateId,templateParams,publicKey)
+    .then((response)=> {
+      console.log('Email sent!', response);
+      setName('');
+      setEmail('');
+      setMessage('');
+    })
+    .catch((error)=>{
+      console.error('Error sending mail', error);
     });
-  };
+  }
   
     return (
       <motion.div
@@ -24,13 +43,20 @@ const Contact = () => {
         <span>You can email me!</span>
         <h1>I will reply asap😊</h1>
         <br/>
-        <form ref={form} onSubmit={sendEmail}>
-          <label>Email</label>
-          <input type="email" name="email"/>
-          <label>Name</label>
-          <input type="name" name="name" required/>
-          <textarea name="message" placeholder="message" required/> \
-          <input type="submit" value="Send" className=""/>
+        <form onSubmit={handleSubmit} className="emailForm">
+          <input type="text"
+          placeholder="your name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}/>
+          <input  type="email"
+          value={email}
+          onChange={(e)=> setEmail(e.target.value)}/>
+          <textarea
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}>
+          </textarea>
+          <button type="submit" className="text-black">Send</button>
+
         </form>
    
   
