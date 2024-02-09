@@ -18,7 +18,7 @@ const Projects = () => {
       transition: { delay: 0.1 },
       }}
       id="Projects">
-      <span className="font-bold text-4xl flex">PROJECTS</span>
+      <span className="font-bold text-4xl flex divider">PROJECTS</span>
       <br />
       <br />
       <div className='flex-nowrap gap-7 flex justify-center items-center'>
@@ -36,8 +36,8 @@ const Projects = () => {
           <div className="badge badge-outline">TypeScript</div>
         </div>
         <div className="flex gap-4">
-        <IoIosLink onClick={() => handleOpenNewTab("https://rent-car-app-flame.vercel.app/")} className="cursor-pointer justify-center " size={35}/>
-        <IoLogoGithub onClick={() => handleOpenNewTab("https://github.com/Soylatte/rent-car-app")} className="cursor-pointer justify-center" size={35}/>
+        <IoIosLink onClick={() => handleOpenNewTab("https://rent-car-app-flame.vercel.app/")} className="cursor-pointer justify-center " size={30}/>
+        <IoLogoGithub onClick={() => handleOpenNewTab("https://github.com/Soylatte/rent-car-app")} className="cursor-pointer justify-center" size={30}/>
         </div>
       </div>
     </div>
@@ -55,8 +55,8 @@ const Projects = () => {
     <div className="badge badge-outline">Bootstrap 5</div>
   </div>
   <div className="flex gap-4">
-  <IoIosLink onClick={() => handleOpenNewTab("https://splendid-khapse-209576.netlify.app/")} className="cursor-pointer" size={35}/>
-        <IoLogoGithub onClick={() => handleOpenNewTab("https://github.com/Soylatte/Hej-cafe-web")} className="cursor-pointer" size={35}/>
+  <IoIosLink onClick={() => handleOpenNewTab("https://splendid-khapse-209576.netlify.app/")} className="cursor-pointer" size={30}/>
+        <IoLogoGithub onClick={() => handleOpenNewTab("https://github.com/Soylatte/Hej-cafe-web")} className="cursor-pointer" size={30}/>
 </div>
 </div>
 </div>
@@ -76,8 +76,8 @@ const Projects = () => {
 
 
 <div className="flex gap-4">
-  <IoIosLink onClick={() => handleOpenNewTab("https://github.com/Soylatte/Hej-cafe-web")} className="cursor-pointer" size={35}/>
-        <IoLogoGithub  onClick={() => handleOpenNewTab("https://github.com/Soylatte/portfolio-new")} className="cursor-pointer" size={35}/>
+  <IoIosLink onClick={() => handleOpenNewTab("https://github.com/Soylatte/Hej-cafe-web")} className="cursor-pointer" size={30}/>
+        <IoLogoGithub  onClick={() => handleOpenNewTab("https://github.com/Soylatte/portfolio-new")} className="cursor-pointer" size={30}/>
 </div>
 </div>
 </div>

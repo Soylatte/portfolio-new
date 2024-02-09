@@ -39,7 +39,7 @@ const Contact = () => {
     return (
       <motion.div
       animate={{ x: 100 }}
-      transition={{ type: "spring" }} id="Contact" className="flex gap-4">
+      transition={{ type: "spring" }} id="Contact" className="gap-5 card w-3/4 glass flex ">
         <span className="font-bold text-4xl">You can email me!</span>
         <br/>
         <form onSubmit={handleSubmit} className="emailForm">
@@ -59,8 +59,6 @@ const Contact = () => {
           <button type="submit" className="text-white bg-slate-400 max-8 py-4 rounded-full w-32 flex justify-center items-center transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg" >Send</button>
 
         </form>
-   
-  
 </motion.div>
     )
 }
