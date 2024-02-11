@@ -10,19 +10,19 @@ const Navbar = () => {
             <nav className="navbar">
                 <Link to='/'spy={true} smooth={true} className="btn btn-ghost text-xl">Soyeon Kim</Link>
                 <div className="space-between gap-5 font-bold cursor-pointer" >
-                <Link to="Skills" spy={true} smooth={true} onClick={()=> {
-                    window.scrollTo({
-                        top:800,
-                        behavior:'smooth',
-                    })
-                }} id="1">Skills</Link>
-                <Link to="Projects" spy={true} smooth={true} onClick={()=> {
+                <Link to="Skills" spy={true} smooth={true} offset={-100} onClick={()=> {
                     window.scrollTo({
                         top:700,
                         behavior:'smooth',
                     })
+                }} id="1">Skills</Link>
+                <Link to="Projects" spy={true} smooth={true} offset={-100} onClick={()=> {
+                    window.scrollTo({
+                        top:800,
+                        behavior:'smooth',
+                    })
                 }} id="2">Projects</Link>
-                <Link to="Contact" spy={true} smooth={true} onClick={()=> {
+                <Link to="Contact" spy={true} smooth={true}  offset={-100} onClick={()=> {
                     window.scrollTo({
                         top:1000,
                         behavior:'smooth',
