@@ -23,7 +23,9 @@ const Projects = () => {
       <br />
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7'>
       <div className="card w-96 bg-base-100 shadow-xl">
-      <figure><img src={process.env.PUBLIC_URL+'./assets/socar.preview.png'} alt='socar' /></figure>
+      <figure>
+        <img src={process.env.PUBLIC_URL+'./assets/socar.preview.png'} alt='socar' />
+        </figure>
       <div className="card-body">
         <h2 className="card-title">
           socar Rent car website
