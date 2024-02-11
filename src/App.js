@@ -8,6 +8,7 @@ import Skills from './components/skills';
 import Projects from './components/project';
 
 
+
 function App() {
 
 
@@ -35,6 +36,7 @@ function App() {
       <br/>
       <br/>
       <Footer />
+      
       </Router>
 
       </div>
