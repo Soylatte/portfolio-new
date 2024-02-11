@@ -24,7 +24,7 @@ const Projects = () => {
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7'>
       <div className="card w-96 bg-base-100 shadow-xl">
       <figure>
-        <img src={process.env.PUBLIC_URL+'./assets/socar.preview.png'} alt='socar' />
+        <img src="https://github.com/Soylatte/portfolio-new/blob/main/public/assets/socar.preview.PNG?raw=true" alt='socar' />
         </figure>
       <div className="card-body">
         <h2 className="card-title">
@@ -46,7 +46,7 @@ const Projects = () => {
 
 
 <div className="card w-96 bg-base-100 shadow-xl">
-<figure><img src={process.env.PUBLIC_URL+'./assets/Hej.preview.png'} alt='hej' /></figure>
+<figure><img src="https://github.com/Soylatte/portfolio-new/blob/main/public/assets/Hej.preview.PNG?raw=true" alt='hej' /></figure>
 <div className="card-body">
   <h2 className="card-title">
     Hej cafe website
@@ -64,7 +64,7 @@ const Projects = () => {
 </div>
 
 <div className="card w-96 bg-base-100 shadow-xl">
-<figure><img src={process.env.PUBLIC_URL+'./assets/portfolio.preview.png'} alt='portfolio' /></figure>
+<figure><img src="https://github.com/Soylatte/portfolio-new/blob/main/public/assets/portfolio.preview.PNG?raw=true" alt='portfolio' /></figure>
 <div className="card-body">
   <h2 className="card-title">
     Portfolio
