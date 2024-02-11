@@ -38,25 +38,31 @@ const Contact = () => {
   
     return (
       <motion.div
-      animate={{ x: 100 }}
-      transition={{ type: "spring" }} id="Contact" className="gap-5 card w-3/4 glass flex ">
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ type: "spring", duration: 0.5 }} id="Contact" className="gap-5 card flex flex-col items-center justify-center mx-auto p-5 md:w-3/4 lg:w-1/2 xl:w-1/3">
         <span className="font-bold text-4xl">You can email me!</span>
         <br/>
-        <form onSubmit={handleSubmit} className="emailForm">
+        <form onSubmit={handleSubmit} className="emailForm w-full">
           <input type="text"
           placeholder="your name"
           value={name}
-          onChange={(e) => setName(e.target.value)}/>
+          onChange={(e) => setName(e.target.value)}
+          className="w-full mb-3 px-4 py-2 border rounded-lg"/>
           <input  type="email"
           value={email}
           placeholder="ex)ascd@gmail.com"
-          onChange={(e)=> setEmail(e.target.value)}/>
+          onChange={(e)=> setEmail(e.target.value)}
+          className="w-full mb-3 px-4 py-2 border rounded-lg"/>
           <textarea
           value={message}
           placeholder="message"
-          onChange={(e) => setMessage(e.target.value)}>
+          onChange={(e) => setMessage(e.target.value)}
+          className="w-full mb-3 px-4 py-2 border rounded-lg resize-none">
           </textarea>
-          <button type="submit" className="text-white bg-slate-400 max-8 py-4 rounded-full w-32 flex justify-center items-center transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg" >Send</button>
+          <div className="text-center">
+          <button type="submit" className="text-white bg-slate-400 px-6 py-3 rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg" >Send</button>
+          </div>
 
         </form>
 </motion.div>

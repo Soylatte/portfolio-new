@@ -17,11 +17,11 @@ const Projects = () => {
         y: 0,
       transition: { delay: 0.1 },
       }}
-      id="Projects">
+      id="Projects"className="flex flex-col items-center">
       <span className="font-bold text-4xl flex divider">PROJECTS</span>
       <br />
       <br />
-      <div className='flex-nowrap gap-7 flex justify-center items-center'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7'>
       <div className="card w-96 bg-base-100 shadow-xl">
       <figure><img src={process.env.PUBLIC_URL+'./assets/socar.preview.png'} alt='socar' /></figure>
       <div className="card-body">

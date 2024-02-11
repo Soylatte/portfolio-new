@@ -26,7 +26,7 @@ const Skills = () => {
       transition={{
         duration: 2
       }}
-       id="Skills">
+       id="Skills" style={{ marginTop: "50px" }}>
 
             <span className="font-bold text-4xl flex flex-1 divider">SKILLS</span>
             <br />

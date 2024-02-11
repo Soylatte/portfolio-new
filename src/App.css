@@ -9,11 +9,15 @@
 input,
 textarea {
   margin: 10px 0px;
-  justify-content: flex-end;
-  border-
+  justify-content: center;
+  border-radius: 20px;
+  height: 50px;
+}
+textarea {
+  height: 100px;
 }
 .App {
   height: 100%;
-
   overflow-x: hidden;
+  padding: 1rem;
 }
