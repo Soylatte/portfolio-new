@@ -7,6 +7,10 @@ Showcase all of my projects so far
 - Space while fixing mobile first version - add width:100%;
 overflow-x:hidden; worked!
 
+
+# Used stacks
+
+
 ### Deployment
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
