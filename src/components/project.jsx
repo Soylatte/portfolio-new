@@ -78,7 +78,7 @@ const Projects = () => {
 
 
 <div className="flex gap-4">
-  <IoIosLink onClick={() => handleOpenNewTab("https://github.com/Soylatte/Hej-cafe-web")} className="cursor-pointer" size={30}/>
+  <IoIosLink onClick={() => handleOpenNewTab("https://soyeonkim.vercel.app/")} className="cursor-pointer" size={30}/>
         <IoLogoGithub  onClick={() => handleOpenNewTab("https://github.com/Soylatte/portfolio-new")} className="cursor-pointer" size={30}/>
 </div>
 </div>
