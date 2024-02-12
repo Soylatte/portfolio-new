@@ -16,6 +16,6 @@ overflow-x:hidden; worked!
 <img src="https://img.shields.io/badge/Tailwind CSS-06B6D4?style=for-the-badge&logo=Tailwind CSS&logoColor=white"/>
 
 ### Deployment
-
-[This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)](https://soyeonkim.vercel.app/)https://soyeonkim.vercel.app/
+Via Vercel
+(https://soyeonkim.vercel.app/)https://soyeonkim.vercel.app/
 
