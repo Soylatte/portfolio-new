@@ -1,5 +1,6 @@
 # Portfolio 
-Showcase all of my projects so far
+Showcase all of my projects so far 
+
 
 # 01.02.2024 - 11.02.2024
 
@@ -15,8 +16,11 @@ overflow-x:hidden; worked!
 
 
 # Used stacks
+- Front-end
 <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=black">
 <img src="https://img.shields.io/badge/Tailwind CSS-06B6D4?style=for-the-badge&logo=Tailwind CSS&logoColor=white"/>
+- Tool and Deployment
+https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white
 
 ### Deployment
 Via Vercel
