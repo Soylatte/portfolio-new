@@ -1,6 +1,8 @@
 # Portfolio 
 Showcase all of my projects so far
 
+# 01.02.2024 - 11.02.2024
+
 # Trouble Shooting
 - Contact span didn't work 'justify-center'
 - Tailwind CSS is quite Convenient but Downside is I had to write CSS on HTML looks crude
