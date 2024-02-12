@@ -6,6 +6,7 @@ Showcase all of my projects so far
 - Tailwind CSS is quite Convenient but Downside is I had to write CSS on HTML looks crude
 - Space while fixing mobile first version - add width:100%;
 overflow-x:hidden; worked!
+- After deploy image didn't show up -> I copied from github image link pasted on jsx file it worked
 
 
 # Used stacks
@@ -14,5 +15,5 @@ overflow-x:hidden; worked!
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+[This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)](https://soyeonkim.vercel.app/)https://soyeonkim.vercel.app/
 
