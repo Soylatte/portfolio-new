@@ -20,7 +20,8 @@ overflow-x:hidden; worked!
 <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=black">
 <img src="https://img.shields.io/badge/Tailwind CSS-06B6D4?style=for-the-badge&logo=Tailwind CSS&logoColor=white"/>
 - Tool and Deployment
-https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white
+<img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white">
+<img src="https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" >
 
 ### Deployment
 Via Vercel
