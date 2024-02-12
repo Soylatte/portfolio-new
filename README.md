@@ -10,6 +10,9 @@ Showcase all of my projects so far
 overflow-x:hidden; worked!
 - After deploy image didn't show up -> I copied from github image link pasted on jsx file it worked
 
+# Preview
+
+![socar](https://github.com/Soylatte/portfolio-new/assets/133989317/1b578948-7aaa-4a86-bc3f-376fb2b37bac)
 
 # Used stacks
 <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=black">
